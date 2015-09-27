@@ -1,0 +1,21 @@
+body {
+	background:#000;
+}
+
+#header {
+	height:100px;
+}
+
+#wrapper {
+	position:relative;
+	border:1px solid #999;
+	margin:auto;
+	width:650px;
+	height:650px;
+}
+
+canvas {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
