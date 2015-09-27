@@ -7,7 +7,7 @@ ajax.onreadystatechange=function() {
 		if (ajax.status == 200) {
 			s.setAttribute("src", "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js");
 		} else {
-			s.setAttribute("src", "fallback");
+			s.setAttribute("src", "./scripts/jquery.min.js");
 		}
 	}
 }
@@ -15,7 +15,7 @@ ajax.open("GET","https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.j
 ajax.send();
 s.onload = function () {
     var d = "scripts";
-    var m = "client";
+    var m = "core";
     $("script").each(function () {
 		if ($(this).attr("src") == undefined) { return; }
         if ($(this).attr("src").substr(-10) == "/corejs.js") {
