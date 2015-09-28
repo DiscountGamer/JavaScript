@@ -13,14 +13,21 @@ dummy.helloworld = function () { //constructor . functionname = function ( argum
 
     //Start of my noob attempt at drawing a image to Canvas==================================================
 
-
+    var angle = 2;
     var myImage = new Image(100, 200);
     myImage.src = "./assets/Ninja_Star.png"
     console.log(myImage);
 
     myImage.onload = function () {
-        _cv[0].drawImage(myImage, 10, 10)
+        _cv[0].drawImage(myImage, 20, 10, 50, 50)
     }
+
+
+    
+    $('#button').on('click', function () {
+        angle += 2;
+        $("#myImage").rotate(angle);
+    });
 
 
 
