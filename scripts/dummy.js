@@ -11,6 +11,20 @@ dummy.helloworld = function() { //constructor . functionname = function ( argume
 	
 	console.log("Hello World!"); //Goes into Chrome/FF debugger console.
 	alert("Hello World!"); //Makes an annoying ass alert box.
+
+	//Start of my noob attempt at drawing a image to Canvas==================================================
+
+	var myImage = new Image(100, 200);
+	myImage.src = "./assets/Ninja_Star"
+	console.log(myImage);
+
+	window.onload = function () {
+	    var c = document.getElementById("myCanvas");
+	    var ctx = c.getContext("2d");
+	    var img = document.getElementById("Ninja_Star");
+	    ctx.drawImage(img, 10, 10);
+	};
+	
 	
 	//To make an image you'll want to create the object.
 	//var img = new Image(); then give it a link to the actual file.
