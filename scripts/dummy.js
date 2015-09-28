@@ -23,11 +23,8 @@ dummy.helloworld = function () { //constructor . functionname = function ( argum
     }
 
 
-    
-    $('#button').on('click', function () {
-        angle += 2;
-        $("#myImage").rotate(angle);
-    });
+    _cv[0].rotate(20 * Math.PI / 180);
+    _cv[0].fillRect(50, 20, 100, 50);
 
 
 
