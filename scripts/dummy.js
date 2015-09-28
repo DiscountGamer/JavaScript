@@ -15,15 +15,15 @@ dummy.helloworld = function() { //constructor . functionname = function ( argume
 	//Start of my noob attempt at drawing a image to Canvas==================================================
 
 	var myImage = new Image(100, 200);
-	myImage.src = "./assets/Ninja_Star"
+	myImage.src = "./assets/Ninja_Star.png"
 	console.log(myImage);
-
-	window.onload = function () {
+	_cv[0].drawImage(myImage, 10, 10)
+	
 	    var c = document.getElementById("myCanvas");
 	    var ctx = c.getContext("2d");
 	    var img = document.getElementById("Ninja_Star");
 	    ctx.drawImage(img, 10, 10);
-	};
+	
 	
 	
 	//To make an image you'll want to create the object.
