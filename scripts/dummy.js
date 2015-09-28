@@ -9,23 +9,26 @@ dummy = { }; //A constructor. Leave it blank if you don't care.
 
 dummy.helloworld = function () { //constructor . functionname = function ( arguments ) {
 
-   
+
 
     //Start of my noob attempt at drawing a image to Canvas==================================================
 
-    var angle = 2;
+    var ang = 0; //angle
+    var fps = 1000 / 25; //number of frames per sec
     var myImage = new Image(100, 200);
     myImage.src = "./assets/Ninja_Star.png"
     console.log(myImage);
 
     myImage.onload = function () {
         _cv[0].drawImage(myImage, 20, 10, 50, 50)
+
+
+
+        setInterval(function () {
+            _cv[0].rotate(20 * Math.PI / 180);
+            _cv[0].fillRect(50, 20, 100, 50);
+        }, fps);
     }
-
-
-    _cv[0].rotate(20 * Math.PI / 180);
-    _cv[0].fillRect(50, 20, 100, 50);
-
 
 
 
