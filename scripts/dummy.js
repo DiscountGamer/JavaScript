@@ -1,7 +1,6 @@
 dummy = function () {
-    var fps = 30;
-
- }; //A constructor. Leave it blank if you don't care.
+    this.fps = 30;
+}; //A constructor. Leave it blank if you don't care.
 
 //A function that "dummy" owns.
 //"dummy" is automatically constructed in the global scope,
@@ -27,7 +26,7 @@ dummy.helloworld = function () { //constructor . functionname = function ( argum
         _cv[0].drawImage(myImage, 20, 10, 50, 50)
         
 			
-        }, fps);
+        }, this.fps);
     }
 
 
