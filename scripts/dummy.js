@@ -1,4 +1,4 @@
-dummy = { }; //A constructor. Leave it blank if you don't care.
+dummy = function () { }; //A constructor. Leave it blank if you don't care.
 
 //A function that "dummy" owns.
 //"dummy" is automatically constructed in the global scope,
@@ -7,7 +7,7 @@ dummy = { }; //A constructor. Leave it blank if you don't care.
 //var dum = new dummy(); would make an instance totally seperate from the global one.
 
 
-dummy = function () { //constructor . functionname = function ( arguments ) {
+dummy.helloworld = function () { //constructor . functionname = function ( arguments ) {
 
 
 
