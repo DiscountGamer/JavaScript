@@ -14,20 +14,14 @@ dummy.helloworld = function () { //constructor . functionname = function ( argum
     //Start of my noob attempt at drawing a image to Canvas==================================================
 
     var ang = 0; //angle
-    var fps = 1000 / 2; //number of frames per sec
+    var fps = 30; //number of frames per sec
     var myImage = new Image(100, 200);
-    myImage.src = "./assets/Ninja_Star.png"
+    myImage.src = "./assets/Red_ball.png"
     console.log(myImage);
 
     myImage.onload = function () {
         _cv[0].drawImage(myImage, 20, 10, 50, 50)
-
-		_cv[0].translate(200,200);
-
-        setInterval(function () {
-			_cv[0].fillStyle = "rgba(255,255,255,1)";
-            _cv[0].rotate(20 * Math.PI / 180);
-            _cv[0].fillRect(-50, -25, 100, 50);
+			
         }, fps);
     }
 
