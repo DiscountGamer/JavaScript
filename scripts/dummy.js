@@ -1,4 +1,7 @@
-dummy = function () { }; //A constructor. Leave it blank if you don't care.
+dummy = function () {
+    var fps = 30;
+
+ }; //A constructor. Leave it blank if you don't care.
 
 //A function that "dummy" owns.
 //"dummy" is automatically constructed in the global scope,
@@ -13,8 +16,7 @@ dummy.helloworld = function () { //constructor . functionname = function ( argum
 
     //Start of my noob attempt at drawing a image to Canvas==================================================
 
-    var ang = 0; //angle
-    var fps = 30; //number of frames per sec
+     //number of frames per sec
     var myImage = new Image(100, 200);
     myImage.src = "./assets/Red_ball.png"
     console.log(myImage);
