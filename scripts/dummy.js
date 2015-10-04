@@ -20,6 +20,7 @@ dummy.helloworld = function () { //constructor . functionname = function ( argum
     console.log(myImage);
 
     myImage.onload = function () {
+    setInterval(function() {
         _cv[0].drawImage(myImage, 20, 10, 50, 50)
 			
         }, fps);
