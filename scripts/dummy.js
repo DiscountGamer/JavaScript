@@ -7,7 +7,7 @@ dummy = { }; //A constructor. Leave it blank if you don't care.
 //var dum = new dummy(); would make an instance totally seperate from the global one.
 
 
-dummy.helloworld = function () { //constructor . functionname = function ( arguments ) {
+dummy = function () { //constructor . functionname = function ( arguments ) {
 
 
 
@@ -18,10 +18,12 @@ dummy.helloworld = function () { //constructor . functionname = function ( argum
     var myImage = new Image(100, 200);
     myImage.src = "./assets/Red_ball.png"
     console.log(myImage);
+    
 
     myImage.onload = function () {
-    setInterval(function() {
+        setInterval(function () {
         _cv[0].drawImage(myImage, 20, 10, 50, 50)
+        
 			
         }, fps);
     }
